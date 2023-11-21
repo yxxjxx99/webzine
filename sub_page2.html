@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>추천명약 - 월간 공진단</title>
+    <link rel="icon" href="img/icon/logo.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/sub_page2.css">
+    <link rel="stylesheet" href="css/mobile_sub2.css" media="all and (max-width: 800px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/Gongjindan.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <h1><a href="index.html"><img src="sub2_img/sub_list_logo.png" alt="logo"></a></h1>
+            <nav class="gnb">
+                <ul class="gnb_area">
+                    <li>
+                        <a href="sub_page1.html">웹진 소개</a>
+                        <ul class="gnb_before">
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub_page2.html" class="click_gnb">추천명약</a>
+                        <ul class="gnb_before">
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub_page3.html">예인터뷰</a>
+                        <ul class="gnb_before">
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub_page6.html">연희살롱</a>
+                        <ul class="gnb_before">
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub_page7.html">소리탐독</a>
+                        <ul class="gnb_before">
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu_bar">
+                <a href="#">
+                    <img src="sub2_img/link.png" alt="">
+                    <img src="sub2_img/share.png" alt="">
+                </a>
+                <button id="m_btn"><img src="sub2_img/ico_mobile_menu_white.png" alt=""></button>
+            </div>
+            <button id="btn"><img src="sub2_img/ico_mobile_menu_white.png" alt=""></button>
+        </div>
+    </header>
+    <nav class="menu clear">
+        <div class="menu_area">
+            <div class="black_bg"></div>
+            <div class="main_bg">
+                <div class="main_bg_top">
+                    <div class="close_btn">
+                        <a href="#"><img src="img/icon/btn_closed_nav.png" alt=""></a>
+                    </div>
+                    <div class="search">
+                        <fieldset>
+                            <a href="#" class="search_img"><img src="img/icon/ico_nav_srch.png" alt=""></a>
+                            <input type="text" id="search_area"    placeholder="검색할 단어를 입력해주세요." >
+                        </fieldset>
+                    </div>
+                    <div class="menu_box">
+                        <span>코너별 목록 바로가기</span>
+                    </div>
+                    <div class="menu_list">
+                        <ul>
+                            <li><a href="sub_page2.html">PREVIEW 추천명약</a></li>
+                            <li><a href="sub_page4.html">TREND 현상진맥</a></li>
+                            <li><a href="sub_page3.html">PEOPLE 그들의 이력서</a></li>
+                            <li><a href="sub_page5.html">STORY 풍류재담</a></li>
+                            <li><a href="sub_page6.html">PLAYLIST 연희살롱</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_box">
+                        <span>이달의 콘텐츠 바로가기</span>
+                    </div>
+                    <div class="menu_list2">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>추천명약</span><br>
+                                    <strong>묵은해 보내올 제 새해 소원을 담아</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>현상진맥</span><br>
+                                    <strong>전통 공연·음반 트렌드 2022년 회고 vs 2023년 전망</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>그들의 이력서</span><br>
+                                    <strong>점 긋고, 점 잇다 달음(Dal:um)</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>풍류재담</span><br>
+                                    <strong>다시, 심청가 ② 젖동냥하는 대목 "죄송한데, 저 좀 도와주세요"</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>연희살롱</span><br>
+                                    <strong>눈 내리는 날 듣는 노래 정가 보컬리스트 최여완 편</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_bg_bottom">
+                    <div class="menu_news">
+                        <ul>
+                            <li><a href="#"><img src="img/icon/ico_nav1.png" alt="">문화계 소식</a></li>
+                            <li><a href="#"><img src="img/icon/ico_nav2.png" alt="">추천 영상</a></li>
+                            <li><a href="#"><img src="img/icon/ico_nav3.png" alt="">공연 소식</a></li>
+                            <li><a href="#"><img src="img/icon/ico_nav4.png" alt="">새 음반</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_bottom_area">
+                        <ul>
+                            <li><a href="#">웹진 소개</a></li>
+                            <li><a href="#">과월호</a></li>
+                            <li><a href="#">공연 등록</a></li>
+                            <li><a href="#">음반 등록</a></li><br>
+                            <li><a href="#">정기구독</a></li>
+                            <li><a href="#">건의·문의</a></li>
+                            <li><a href="#">독자감상실록</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_sns">
+                        <a href="#" class="facebook"><img src="img/icon/ico_nav_sns1.png" alt=""></a>
+                        <a href="#" class="instagram"><img src="img/icon/ico_nav_sns2.png" alt=""></a>
+                        <a href="#" class="blog"><img src="img/icon/ico_nav_sns3.png" alt=""></a>
+                        <a href="#" class="youtube"><img src="img/icon/ico_nav_sns4.png" alt=""></a>
+                        <a href="#" class="naver_tv"><img src="img/icon/ico_nav_sns5.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="img_area">
+            <div class="tit_text">REVIEW</div>
+            <div class="recommend">
+                <img src="sub2_img/sub_tit.png" alt="">
+            </div>
+            <p>공연, 축제를 비롯해 프로젝트, 미디어 활동까지<br>
+                전통공연예술계의 다양하고 재밌는 콘텐츠를 만나보세요.</p>
+                <div class="a_area">
+                    <a href="#">
+                        <p class="day">2023.08</p>
+                        <div class="a_area_img"><img src="sub2_img/61_preview.jpg" alt=""></div>
+                        <div class="text_box">
+                            <strong>당신의 □□ 수치는 몇 %?<br>
+                                명약단의 신통방통 문화처방전</strong>
+                            <p>판소리 한 장면으로 보는 심리테스트! 당신의 마음속 □□ 은 얼만큼인가요? 우는 어린 심청을 무엇으로 달랠지 고르면 명약단이 문화생활 명약을 처방해드려요.</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        </div>
+        <div class="inner_contents">
+            <ul>
+                <li>
+                    <a href="#">
+                        <p class="day">2023.07</p>
+                        <p class="vol">vol.60</p>
+                        <figure>
+                            <img src="sub2_img/60_preview.jpg" alt="">
+                        </figure>
+                        <p class="main_txt">당신의 □□ 수치는 몇 %? 명약단의 신통방통 문화처방전</p>
+                        <p class="sub_txt">판소리 한 장면으로 보는 심리테스트! 당신의 마음속 □□ 은 얼만큼인가요? 몽룡이 춘향을 만날 때 입은 옷을 고르면 명약단이 문화생활...</p>
+                        <div class="view">
+                            <a href="#">
+                            자세히보기 <span class="material-symbols-outlined">
+                                add
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="day">2023.06</p>
+                        <p class="vol">vol.59</p>
+                        <figure>
+                            <img src="sub2_img/59_preview.jpg" alt="">
+                        </figure>
+                        <p class="main_txt">당신의 □□ 수치는 몇 %? 명약단의 신통방통 문화처방전</p>
+                        <p class="sub_txt">판소리 한 장면으로 보는 심리테스트! 당신의 마음속 □□ 은 얼만큼인가요? 몽룡이 춘향을 만날 때 입은 옷을 고르면 명약단이 문화생활...</p>
+                        <div class="view">
+                            <a href="#">
+                            자세히보기 <span class="material-symbols-outlined">
+                                add
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="day">2023.05</p>
+                        <p class="vol">vol.58</p>
+                        <figure>
+                            <img src="sub2_img/58_preview.jpg" alt="">
+                        </figure>
+                        <p class="main_txt">당신의 □□ 수치는 몇 %? 명약단의 신통방통 문화처방전</p>
+                        <p class="sub_txt">판소리 한 장면으로 보는 심리테스트! 당신의 마음속 □□ 은 얼만큼인가요? 몽룡이 춘향을 만날 때 입은 옷을 고르면 명약단이 문화생활...</p>
+                        <div class="view">
+                            <a href="#">
+                            자세히보기 <span class="material-symbols-outlined">
+                                add
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="day">2023.04</p>
+                        <p class="vol">vol.57</p>
+                        <figure>
+                            <img src="sub2_img/57_preview.jpg" alt="">
+                        </figure>
+                        <p class="main_txt">남산에 봄춘자 드니 가지 가지 꽃화자라</p>
+                        <p class="sub_txt">성큼 다가온 봄에 마음이 설레는 날, 활짝 핀 꽃처럼 예술로 기지개를 켜보자.</p>
+                        <div class="view">
+                            <a href="#">
+                            자세히보기 <span class="material-symbols-outlined">
+                                add
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="day">2023.03</p>
+                        <p class="vol">vol.56</p>
+                        <figure>
+                            <img src="sub2_img/56_preview.jpg" alt="">
+                        </figure>
+                        <p class="main_txt">줄기는 실이 되고 꽃은 북이 되니 구십춘광이로구나</p>
+                        <p class="sub_txt">소풍 같은 하루를 보내고 싶다면, 명약단의 예술 처방으로 힐링해보자.</p>
+                        <div class="view">
+                            <a href="#">
+                            자세히보기 <span class="material-symbols-outlined">
+                                add
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="day">2023.02</p>
+                        <p class="vol">vol.55</p>
+                        <figure>
+                            <img src="sub2_img/55_preview.jpg" alt="">
+                        </figure>
+                        <p class="main_txt">가세 가세 달맞이 가세 보름달이 뜬 환한 곳으로</p>
+                        <p class="sub_txt">이른 봄 좋은 기운을 만끽하고 싶다면, 보름달이 뜬 환한 곳으로 가보면 어떨까?</p>
+                        <div class="view">
+                            <a href="#">
+                            자세히보기 <span class="material-symbols-outlined">
+                                add
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="day">2023.01</p>
+                        <p class="vol">vol.54</p>
+                        <figure>
+                            <img src="sub2_img/54_preview.jpg" alt="">
+                        </figure>
+                        <p class="main_txt">묵은해 보내올 제 새해 소원을 담아</p>
+                        <p class="sub_txt">새해를 맞이해 새로운 목표를 세우고 싶다면? 명약단의 처방으로 취향을 깊게 파보자.</p>
+                        <div class="view">
+                            <a href="#">
+                            자세히보기 <span class="material-symbols-outlined">
+                                add
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="day">2022.12</p>
+                        <p class="vol">vol.53</p>
+                        <figure>
+                            <img src="sub2_img/53_preview.jpg" alt="">
+                        </figure>
+                        <p class="main_txt">산에는 눈이 오고 포근한 겨울을 위해</p>
+                        <p class="sub_txt">먹고 마시며 보내는 연말은 그만! 올 겨울은 핫한 예술로 즐겨보는 건 어떨까?</p>
+                        <div class="view">
+                            <a href="#">
+                            자세히보기 <span class="material-symbols-outlined">
+                                add
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="day">2022.11</p>
+                        <p class="vol">vol.52</p>
+                        <figure>
+                            <img src="sub2_img/52_preview.jpg" alt="">
+                        </figure>
+                        <p class="main_txt">낙엽은 버석 떨어지고 이별과 결실 사이에서</p>
+                        <p class="sub_txt">추수의 계절, 한 해를 돌아보게 된다면? 명약단의 예술 처방으로 시간을 갈무리해보자.</p>
+                        <div class="view">
+                            <a href="#">
+                            자세히보기 <span class="material-symbols-outlined">
+                                add
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button class="more_view">더 보기 <span class="material-symbols-outlined">
+            expand_more
+            </span>
+        </button>
+        <div class="more_contents">
+            <div class="inner_contents">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <p class="day">2022.10</p>
+                            <p class="vol">vol.51</p>
+                            <figure>
+                                <img src="sub2_img/51_preview.jpg" alt="">
+                            </figure>
+                            <p class="main_txt">거문고를 베고 누어 시공을 초월한 곳으로</p>
+                            <p class="sub_txt">쾌청한 하늘을 벗 삼아 떠나기 좋은 날, 시공간을 넘어 즐거움이 있는 곳으로 가보자.</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="day">2022.09</p>
+                            <p class="vol">vol.50</p>
+                            <figure>
+                                <img src="sub2_img/50_preview.jpg" alt="">
+                            </figure>
+                            <p class="main_txt">성긴 비에 추풍이 일어나니, 가을 감성을 충전하는 방법</p>
+                            <p class="sub_txt">바람이 선선해진 가을의 길목, 허해진 마음 그 깊숙한 곳에 감성을 채워보자.</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="day">2022.08</p>
+                            <p class="vol">vol.49</p>
+                            <figure>
+                                <img src="sub2_img/49_preview.jpg" alt="">
+                            </figure>
+                            <p class="main_txt">매아미 맵다 울고 - 여름밤, 묘한 분위기에 취해</p>
+                            <p class="sub_txt">연일 계속되는 열대야에 잠 못 이룬다면, 여름밤의 분위기에 취해버리는 건 어떨까?</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="day">2022.07</p>
+                            <p class="vol">vol.48</p>
+                            <figure>
+                                <img src="sub2_img/48_preview.jpg" alt="">
+                            </figure>
+                            <p class="main_txt">녹음방초 승화시라, 여름을 쿨하게 보내는 방법</p>
+                            <p class="sub_txt">여름휴가를 떠나고 싶은 당신에게 힙하고 쿨하게 더위를 날릴 명약단의 특급 처방!</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="day">2022.06</p>
+                            <p class="vol">vol.47</p>
+                            <figure>
+                                <img src="sub2_img/47_preview.jpg" alt="">
+                            </figure>
+                            <p class="main_txt">한가하면 풍월 짓고 노래하니 빈칸을 채우고 싶은 당신에게</p>
+                            <p class="sub_txt">새로운 것 없는 일상이 따분하고 심심하다면 명약단의 처방으로 마음속 빈칸을 채워보자.</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="day">2022.05</p>
+                            <p class="vol">vol.46</p>
+                            <figure>
+                                <img src="sub2_img/46_preview.jpg" alt="">
+                            </figure>
+                            <p class="main_txt">남풍은 때맞춰 맥추를 재촉하니 신록의 계절을 맞이한 당신에게</p>
+                            <p class="sub_txt">푸르른 5월, 화창한 날씨에 마음이 싱숭생숭하다면! 명약단의 예술 처방으로 취향 따라 이 계절을 즐겨보자.</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="day">2022.04</p>
+                            <p class="vol">vol.45</p>
+                            <figure>
+                                <img src="sub2_img/45_preview.jpg" alt="">
+                            </figure>
+                            <p class="main_txt">도처춘풍하고 화란춘성하니 봄을 기다려온 당신에게</p>
+                            <p class="sub_txt">완연한 봄날, 답답하고 삶에 활력이 떨어진다면? 4월의 명약단이 추천하는 예술 처방으로 Go Go!</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="day">2022.03</p>
+                            <p class="vol">vol.44</p>
+                            <figure>
+                                <img src="sub2_img/44_preview.jpg" alt="">
+                            </figure>
+                            <p class="main_txt">전통의 현주소를 그리다 - 창작산실 '올해의 신작'</p>
+                            <p class="sub_txt">2008년부터 창작 레퍼토리를 발굴해온 공연예술 창작산실. 올해의 신작에 오른 세 작품은 실증과 실험 사이에서 예술의 현주소를...</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="day">2022.02</p>
+                            <p class="vol">vol.43</p>
+                            <figure>
+                                <img src="sub2_img/43_preview.jpg" alt="">
+                            </figure>
+                            <p class="main_txt">전통이 ON多! 취향 발견 ❬온통 페스티벌❭</p>
+                            <p class="sub_txt">팬데믹으로 온택트가 일상이 된 시대, 지루한 일상 속 문화생활을 못해 찌뿌둥하다면! 아직 나만의 예술 취향을 찾지 못했다면!</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer clear">
+        <div class="footer_area">
+            <h2><span></span></h2>
+            <div class="footer_logo">
+                <a href="#">
+                    <img src="img/gzd_logo.png" alt="">
+                </a>
+            </div>
+            <div class="footer_sns">
+                <ul>
+                    <li><a href="#"><img src="img/sns1.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/sns2.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/sns3.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/sns4.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="footer_txt">
+                <p>발행인 김삼진 | 편집부장 전국은 | 편집팀장 심재흥 | 기획 박혜주·이정하 | 아트디렉터 이슬 | 사진 김태화 | 편집실 대외협력팀 02-580-3282 | webzine@kotpa.org | 06757 서울특별시 서초구 서초동 남부순환로 2364 국악연수관 1층</p>
+                <p>Copyright 2023 Korean Traditional Performing Arts Foundation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

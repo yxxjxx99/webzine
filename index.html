@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>월간 공진단</title>
+    <link rel="icon" href="img/icon/logo.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/mobile.css" media="all and (max-width: 600px)">
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/Gongjindan.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="#"><img src="img/icon/sub_list_logo.png" alt="logo"></a></h1>
+        <nav class="gnb">
+            <ul class="gnb_area">
+                <li>
+                    <a href="sub_page1.html">웹진 소개</a>
+                    <ul class="gnb_before">
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub_page2.html">추천명약</a>
+                    <ul class="gnb_before">
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub_page4.html">현상진맥</a>
+                    <ul class="gnb_before">
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub_page3.html">그들의 이력서</a>
+                    <ul class="gnb_before">
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub_page5.html">풍류재담</a>
+                    <ul class="gnb_before">
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sub_page6.html">연희살롱</a>
+                    <ul class="gnb_before">
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <button id="btn">&#9776;</button>
+    </header>
+    <nav class="menu clear">
+        <div class="menu_area">
+            <div class="black_bg"></div>
+            <div class="main_bg">
+                <div class="main_bg_top">
+                    <div class="close_btn">
+                        <a href="#"><img src="img/icon/btn_closed_nav.png" alt=""></a>
+                    </div>
+                    <div class="search">
+                        <fieldset>
+                            <a href="#" class="search_img"><img src="img/icon/ico_nav_srch.png" alt=""></a>
+                            <input type="text" id="search_area"    placeholder="검색할 단어를 입력해주세요." >
+                        </fieldset>
+                    </div>
+                    <div class="menu_box">
+                        <span>코너별 목록 바로가기</span>
+                    </div>
+                    <div class="menu_list">
+                        <ul>
+                            <li><a href="sub_page2.html">PREVIEW 추천명약</a></li>
+                            <li><a href="sub_page4.html">TREND 현상진맥</a></li>
+                            <li><a href="sub_page3.html">PEOPLE 그들의 이력서</a></li>
+                            <li><a href="sub_page5.html">STORY 풍류재담</a></li>
+                            <li><a href="sub_page6.html">PLAYLIST 연희살롱</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_box">
+                        <span>이달의 콘텐츠 바로가기</span>
+                    </div>
+                    <div class="menu_list2">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>추천명약</span><br>
+                                    <strong>묵은해 보내올 제 새해 소원을 담아</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>현상진맥</span><br>
+                                    <strong>전통 공연·음반 트렌드 2022년 회고 vs 2023년 전망</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>그들의 이력서</span><br>
+                                    <strong>점 긋고, 점 잇다 달음(Dal:um)</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>풍류재담</span><br>
+                                    <strong>다시, 심청가 ② 젖동냥하는 대목 "죄송한데, 저 좀 도와주세요"</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>연희살롱</span><br>
+                                    <strong>눈 내리는 날 듣는 노래 정가 보컬리스트 최여완 편</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_bg_bottom">
+                    <div class="menu_news">
+                        <ul>
+                            <li><a href="#"><img src="img/icon/ico_nav1.png" alt="">문화계 소식</a></li>
+                            <li><a href="#"><img src="img/icon/ico_nav2.png" alt="">추천 영상</a></li>
+                            <li><a href="#"><img src="img/icon/ico_nav3.png" alt="">공연 소식</a></li>
+                            <li><a href="#"><img src="img/icon/ico_nav4.png" alt="">새 음반</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_bottom_area">
+                        <ul>
+                            <li><a href="#">웹진 소개</a></li>
+                            <li><a href="#">과월호</a></li>
+                            <li><a href="#">공연 등록</a></li>
+                            <li><a href="#">음반 등록</a></li><br>
+                            <li><a href="#">정기구독</a></li>
+                            <li><a href="#">건의·문의</a></li>
+                            <li><a href="#">독자감상실록</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_sns">
+                        <a href="#" class="facebook"><img src="img/icon/ico_nav_sns1.png" alt=""></a>
+                        <a href="#" class="instagram"><img src="img/icon/ico_nav_sns2.png" alt=""></a>
+                        <a href="#" class="blog"><img src="img/icon/ico_nav_sns3.png" alt=""></a>
+                        <a href="#" class="youtube"><img src="img/icon/ico_nav_sns4.png" alt=""></a>
+                        <a href="#" class="naver_tv"><img src="img/icon/ico_nav_sns5.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <button id="mobile_btn">&#9776;</button>
+    <div id="wrap">
+        <div class="section1">
+            <div class="left-contents">
+                <img src="img/2301_main_visual.gif" alt="">
+                <p>월간 공진단은 전통공연예술진흥재단이 발행하는 웹진으로<br>
+                    전통예술에 대한 새로운 시선을 만들어 갑니다</p>
+            </div>
+            <div class="right-contents">
+                <div class="item1">
+                    <a href="#">
+                        <div class="type">추천명약</div>
+                        <div class="sub_type">
+                            <div class="small">묵은해 보내올 제</div>
+                            <div class="big">새해 소원을 담아</div>
+                        </div>
+                        <div class="text">새해를 맞이해 새로운 목표를 세우고 싶다면?<br>
+                            명약단의 처방으로 취향을 깊게 파보자.</div>
+                        <div class="more">자세히 보기<img src="img/icon/plus.png" alt=""></div>
+                        <div class="item1_img"><img src="img/main1.png" alt=""></div>
+                    </a>
+                </div>
+                <div class="item2">
+                    <a href="#">
+                        <div class="type">현상진맥</div>
+                        <div class="sub_type">
+                            <div class="big">전통 공연·음반 트렌드
+                            </div>
+                            <div class="small">2022년 회고 vs 2023년 전망</div>
+                        </div>
+                        <div class="text">거리두기의 해제로 활기를 되찾은 전통음악계.<br>
+                            2022년 트렌드를 분석하고 2023년을 전망해본다.</div>
+                        <div class="more">자세히 보기<img src="img/icon/plus.png" alt=""></div>
+                        <div class="item2_img"><img src="img/main2.png" alt=""></div>
+                    </a>
+                </div>
+                <div class="item3">
+                    <a href="#">
+                        <div class="type">그들의 이력서</div>
+                        <div class="sub_type">
+                            <div class="big">점 긋고, 점 잇다</div>
+                            <div class="small">달음(Dal:um)</div>
+                        </div>
+                        <div class="text">점과 점이 이어져 하나의 선이 되듯<br>
+                            가야금과 거문고, 두 사람이 만나 공명한다.</div>
+                        <div class="more">자세히 보기<img src="img/icon/plus.png" alt=""></div>
+                        <div class="item3_img"><img src="img/main3.png" alt=""></div>
+                    </a>
+                </div>
+                <div class="item4">
+                    <a href="#">
+                        <div class="type">풍류재담
+                        </div>
+                        <div class="sub_type">
+                            <div class="small">다시, 심청가 ② 젖동냥하는 대목</div>
+                            <div class="big">"죄송한데, 저 좀 도와주세요"</div>
+                        </div>
+                        <div class="text">요즘 말로 다시 읽고 쓰고 보는 판소리,<br>
+                            혼자서 해겨랄 수 없는 문제를 만났다면?</div>
+                        <div class="more">자세히 보기<img src="img/icon/plus.png" alt=""></div>
+                        <div class="item4_img"><img src="img/main4.png" alt=""></div>
+                    </a>
+                </div>
+                <div class="item5">
+                    <a href="#">
+                        <div class="type">연희살롱
+                        </div>
+                        <div class="sub_type">
+                            <div class="big">눈 내리는 날 듣는 노래</div>
+                            <div class="small">정가 보컬리스트 최여완 편</div>
+                        </div>
+                        <div class="text">온통 하얀 세상에 첫 발자국을 남기듯,<br>
+                            눈 내리는 날 같이 듣고 싶은 플레이리스트!</div>
+                        <div class="more">자세히 보기<img src="img/icon/plus.png" alt=""></div>
+                        <div class="item5_img"><img src="img/main5.png" alt=""></div>
+                    </a>
+                </div>
+
+                <div class="section_area1 clear">
+                    <div class="notice">
+                        <h2><span>NEWS</span></h2>
+                        <h4>
+                            <strong>문화계 소식</strong>
+                            <a href="#">
+                                <img src="img/icon/add.png" alt="">
+                            </a>
+                        </h4>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure><img src="img/notice1.png" alt=""></figure>
+                                        <div class="text">국가무형문화재전수교육관 탐방 프로그램 「공감투...</div>
+                                    </a>
+                                </div>
+                    
+                                <div class="swiper-slide bg2">
+                                    <a href="#">
+                                        <figure><img src="img/notice2.png" alt=""></figure>
+                                        <div class="text">8월, 국립극장 야외에서 <달빛 상영회> 개최 외</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide bg3">
+                                    <a href="#">
+                                        <figure><img src="img/notice3.png" alt=""></figure>
+                                        <div class="text">발달장애인과 지역사회가 만나 소통하는 공연 ‘어...</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide bg4">
+                                    <a href="#">
+                                        <figure><img src="img/notice4.png" alt=""></figure>
+                                        <div class="text">2023 전통예술기획자 양성프로젝트</div>
+                                    </a>
+                    
+                                </div>
+                                <div class="swiper-slide bg5">
+                                    <a href="#">
+                                        <figure><img src="img/notice5.png" alt=""></figure>
+                                        <div class="text">순수한 선율을 만들고 노래하는 듀오, 솔솔</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide bg6">
+                                    <a href="#">
+                                        <figure><img src="img/notice6.png" alt=""></figure>
+                                        <div class="text">뛸판, 놀판, 살판! '2023 대한민국 전통연희축제'</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vedio">
+                        <h2><span>VIDEO</span></h2>
+                        <h4>
+                            <strong>추천영상</strong>
+                            <a href="#">
+                                <img src="img/icon/add.png" alt="">
+                            </a>
+                        </h4>
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure><img src="img/vedio1.png" alt=""></figure>
+                                        <div class="text">2023 굿음악축제 ‘단오굿’: 강릉단오굿</div>
+                                    </a>
+                                </div>
+                    
+                                <div class="swiper-slide bg2">
+                                    <a href="#">
+                                        <figure><img src="img/vedio2.png" alt=""></figure>
+                                        <div class="text">[Playlist] 줄곧 지켜온 앉은굿의 명맥, 신석봉의 ...</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide bg3">
+                                    <a href="#">
+                                        <figure><img src="img/vedio3.png" alt=""></figure>
+                                        <div class="text">[2023 Gugak in人] 이화, 선보미 '이화에 월백하고'</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide bg4">
+                                    <a href="#">
+                                        <figure><img src="img/vedio4.png" alt=""></figure>
+                                        <div class="text">[2023 Gugak in人] 고성오광대보존회 '고성오광대 ...</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msgg">
+                        <h2><span>ARCHAIVE</span></h2>
+                        <h4>
+                            <strong>민속곳간</strong>
+                            <a href="#">
+                                <img src="img/icon/add.png" alt="">
+                            </a>
+                        </h4>
+                        <div class="swiper mySwiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <figure><img src="img/msgg1.jpg" alt=""></figure>
+                                        <div class="text">한국민속예술제 지난 60년의 기록을 온라인에서 만나보세요</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_area2 clear">
+                    <div class="show">
+                        <h2><span>STAGE</span></h2>
+                        <h4>
+                            <strong>공연 소식</strong>
+                            <a href="#">
+                                <img src="img/icon/add.png" alt="">
+                            </a>
+                        </h4>
+                        <div class="swiper mySwiper4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="img/show_notice1.jpg" alt="">
+                                        <div class="show_text">
+                                            <p class="big_txt">2023 The Art Spot<br>Series – 문화공간 음악회<br>(거인 아트랩)</p>
+                                            <p class="small_txt">
+                                                2023.08.11(금) ~ 2023.08.12(토)<br>경기도미술관
+                                            </p>
+                                            <img src="img/icon/bu_button_big.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                    
+                                <div class="swiper-slide bg2">
+                                    <a href="#">
+                                        <img src="img/show_notice2.jpg" alt="">
+                                        <div class="show_text">
+                                            <p class="big_txt">국악뮤지컬 '이팝 : 소리꽃'</p>
+                                            <p class="small_txt">
+                                                2023.05.27(토) ~ 2023.08.19(토) / 토 19:30<br>신재효판소리공원
+                                            </p>
+                                            <img src="img/icon/bu_button_big.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide bg3">
+                                    <a href="#">
+                                        <img src="img/show_notice3.jpg" alt="">
+                                        <div class="show_text">
+                                            <p class="big_txt">국립정동극장 창작 ing<br><긴긴밤></p>
+                                            <p class="small_txt">
+                                                2023.07.27(목) ~ 2023.08.07(월)<br>국립정동극장_세실
+                                            </p>
+                                            <img src="img/icon/bu_button_big.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide bg4">
+                                    <a href="#">
+                                        <img src="img/show_notice4.jpg" alt="">
+                                        <div class="show_text">
+                                            <p class="big_txt">2023 우수작품 선정 - 윤<br>회매십전</p>
+                                            <p class="small_txt">
+                                                2023.08.02 (수) / 19:30
+                                                <br>강릉아트센터 사임당홀
+                                            </p>
+                                            <img src="img/icon/bu_button_big.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide bg5">
+                                    <a href="#">
+                                        <img src="img/show_notice5.jpg" alt="">
+                                        <div class="show_text">
+                                            <p class="big_txt">한국인의 흥과 멋</p>
+                                            <p class="small_txt">
+                                                2023.08.02(수) ~ 2023.08.30(수)<br>정효아트홀
+                                            </p>
+                                            <img src="img/icon/bu_button_big.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide bg6">
+                                    <a href="#">
+                                        <img src="img/show_notice6.jpg" alt="">
+                                        <div class="show_text">
+                                            <p class="big_txt">2023 The Art Spot<br>Series – 문화공간 음악회<br>(사단법인 아리수)
+                                            </p>
+                                            <p class="small_txt">
+                                                2023.08.03(목) ~ 2023.08.06(일)<br>수원시립미술관 아트스페이스 광교
+                                            </p>
+                                            <img src="img/icon/bu_button_big.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide bg7">
+                                    <a href="#">
+                                        <img src="img/show_notice7.jpg" alt="">
+                                        <div class="show_text">
+                                            <p class="big_txt">오마이갓</p>
+                                            <p class="small_txt">
+                                                2023.08.04(금) ~ 2023.08.05(토)<br>연희예술극장
+                                            </p>
+                                            <img src="img/icon/bu_button_big.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide bg8">
+                                    <a href="#">
+                                        <img src="img/show_notice8.jpg" alt="">
+                                        <div class="show_text">
+                                            <p class="big_txt"><2023 신진국악실험무대></p>
+                                            <p class="small_txt">
+                                                2023.08.08(화) ~ 2023.09.08(금)<br>전통공연창작마루 광무대
+                                            </p>
+                                            <img src="img/icon/bu_button_big.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="show_bottom">
+                            <div class="left">
+                                <p>* 공연 일정 및 내용은 상황에 따라 변경될 수 있습니다</p>
+                                <p>* 전통예술 개인/단체/기관은 직접 공연을 등록할 수 있습니다 | 등록 안내</p>
+                            </div>
+                            <div class="right">
+                                <a href="#">
+                                    <img src="img/icon/ico_btn1.png" alt="">
+                                    공연 등록
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_area3 clear">
+                    <div class="ALBUM">
+                        <h2><span>ALBUM</span></h2>
+                        <h4>
+                            <strong>새 음반</strong>
+                            <a href="#">
+                                <img src="img/icon/add.png" alt="">
+                            </a>
+                        </h4>
+                        <div class="swiper mySwiper5">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="img/ALBUM1.jpg" alt="">
+                                        <div class="ALBUM_text">
+                                            <p class="big_txt">백인영류 아쟁산조</p>
+                                            <p class="small_txt">
+                                                백인영
+                                            </p>
+                                            <img src="img/icon/bu_button_big.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide bg2">
+                                    <a href="#">
+                                        <img src="img/ALBUM2.jpg" alt="">
+                                        <div class="ALBUM_text">
+                                            <p class="big_txt">묘독</p>
+                                            <p class="small_txt">
+                                                최경철
+                                            </p>
+                                            <img src="img/icon/bu_button_big.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide bg3">
+                                    <a href="#">
+                                        <img src="img/ALBUM3.jpg" alt="">
+                                        <div class="ALBUM_text">
+                                            <p class="big_txt">아정한 노래 pt.4</p>
+                                            <p class="small_txt">
+                                                이윤진
+                                            </p>
+                                            <img src="img/icon/bu_button_big.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide bg4">
+                                    <a href="#">
+                                        <img src="img/ALBUM4.jpg" alt="">
+                                        <div class="ALBUM_text">
+                                            <p class="big_txt">달그리움</p>
+                                            <p class="small_txt">
+                                                김아름
+                                            </p>
+                                            <img src="img/icon/bu_button_big.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide bg5">
+                                    <a href="#">
+                                        <img src="img/ALBUM5.jpg" alt="">
+                                        <div class="ALBUM_text">
+                                            <p class="big_txt">경상도민요</p>
+                                            <p class="small_txt">
+                                                최윤영
+                                            </p>
+                                            <img src="img/icon/bu_button_big.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide bg6">
+                                    <a href="#">
+                                        <img src="img/ALBUM6.jpg" alt="">
+                                        <div class="ALBUM_text">
+                                            <p class="big_txt">사랑가</p>
+                                            <p class="small_txt">
+                                                ㅈ(지읒)
+                                            </p>
+                                            <img src="img/icon/bu_button_big.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide bg7">
+                                    <a href="#">
+                                        <img src="img/ALBUM7.jpg" alt="">
+                                        <div class="ALBUM_text">
+                                            <p class="big_txt">다시, 봄</p>
+                                            <p class="small_txt">
+                                                허윤재
+                                            </p>
+                                            <img src="img/icon/bu_button_big.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide bg8">
+                                    <a href="#">
+                                        <img src="img/ALBUM8.png" alt="">
+                                        <div class="ALBUM_text">
+                                            <p class="big_txt">풍년 리믹스</p>
+                                            <p class="small_txt">
+                                                박경훈 외
+                                            </p>
+                                            <img src="img/icon/bu_button_big.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ALBUM_bottom">
+                            <div class="left">
+                                <p>* 전통예술 개인/단체/기관은 직접 음반을 등록할 수 있습니다 | 등록 안내</p>
+                            </div>
+                            <div class="right">
+                                <a href="#">
+                                    <img src="img/icon/ico_btn2.png" alt="">
+                                    음반 등록
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_area4 clear">
+                    <div class="banner">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="img/banner_black.png" alt="">
+                                    <div class="banner_txt">
+                                        <strong>BLACK</strong>
+                                        <p>
+                                            전통예술계 동향과 비평<br>
+                                            공진단 블랙을 만나보세요
+                                        </p>
+                                        <img src="img/icon/bu_button_big.png" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/banner_event3.png" alt="">
+                                    <div class="banner_txt">
+                                        <strong>APP</strong>
+                                        <p>
+                                            듣고 뜯고 연주하고 즐기는<br>
+                                            우리 앙상블 어플리케이션
+                                        </p>
+                                        <img src="img/icon/bu_button_big.png" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section_area5 clear">
+                    <div class="input_area">
+                        <div class="main_txt">정기구독 신청</div>
+                        <div class="form_box">
+                            <div class="input_box"                    >
+                                <input type="text" class="input1" name="title" id="sub_title" placeholder="이름">
+                                <input type="text" class="input2" name="content" id="sub_content" placeholder="이메일 주소">
+                                <button id="sub_btn">구독신청</button>
+                            </div>
+                            <div class="agree">
+                                <input type="checkbox" id="check1" class="checkbox1">
+                                <span>개인 정보 제공 및 이용에 동의합니다</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer clear">
+                    <div class="footer_area">
+                        <h2><span></span></h2>
+                        <div class="footer_logo">
+                            <a href="#">
+                                <img src="img/gzd_logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer_sns">
+                            <ul>
+                                <li><a href="#"><img src="img/sns1.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/sns2.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/sns3.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/sns4.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/sns5.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_txt">
+                            <p>발행인 김삼진 | 편집부장 전국은 | 편집팀장 심재흥 | 기획 박혜주·이정하 | 아트디렉터 이슬 | 사진 김태화 | 편집실 대외협력팀 02-580-3282 | webzine@kotpa.org | 06757 서울특별시 서초구 서초동 남부순환로 2364 국악연수관 1층</p>
+                            <p>Copyright 2023 Korean Traditional Performing Arts Foundation. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

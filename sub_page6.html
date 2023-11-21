@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>추천명약 - 월간 공진단</title>
+    <link rel="icon" href="img/icon/logo.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/sub_page6.css">
+    <link rel="stylesheet" href="css/mobile_sub6.css" media="all and (max-width: 800px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/Gongjindan.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <h1><a href="index.html"><img src="sub2_img/sub_list_logo.png" alt="logo"></a></h1>
+            <nav class="gnb">
+                <ul class="gnb_area">
+                    <li>
+                        <a href="sub_page1.html">웹진 소개</a>
+                        <ul class="gnb_before">
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub_page2.html">추천명약</a>
+                        <ul class="gnb_before">
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub_page3.html">예인터뷰</a>
+                        <ul class="gnb_before">
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub_page6.html" class="click_gnb">연희살롱</a>
+                        <ul class="gnb_before">
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub_page7.html">소리탐독</a>
+                        <ul class="gnb_before">
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu_bar">
+                <a href="#">
+                    <img src="sub2_img/link.png" alt="">
+                    <img src="sub2_img/share.png" alt="">
+                </a>
+                <button id="m_btn"><img src="sub2_img/ico_mobile_menu_white.png" alt=""></button>
+            </div>
+            <button id="btn"><img src="sub2_img/ico_mobile_menu_white.png" alt=""></button>
+        </div>
+    </header>
+    <nav class="menu clear">
+        <div class="menu_area">
+            <div class="black_bg"></div>
+            <div class="main_bg">
+                <div class="main_bg_top">
+                    <div class="close_btn">
+                        <a href="#"><img src="img/icon/btn_closed_nav.png" alt=""></a>
+                    </div>
+                    <div class="search">
+                        <fieldset>
+                            <a href="#" class="search_img"><img src="img/icon/ico_nav_srch.png" alt=""></a>
+                            <input type="text" id="search_area"    placeholder="검색할 단어를 입력해주세요." >
+                        </fieldset>
+                    </div>
+                    <div class="menu_box">
+                        <span>코너별 목록 바로가기</span>
+                    </div>
+                    <div class="menu_list">
+                        <ul>
+                            <li><a href="sub_page2.html">PREVIEW 추천명약</a></li>
+                            <li><a href="sub_page4.html">TREND 현상진맥</a></li>
+                            <li><a href="sub_page3.html">PEOPLE 그들의 이력서</a></li>
+                            <li><a href="sub_page5.html">STORY 풍류재담</a></li>
+                            <li><a href="sub_page6.html">PLAYLIST 연희살롱</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_box">
+                        <span>이달의 콘텐츠 바로가기</span>
+                    </div>
+                    <div class="menu_list2">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>추천명약</span><br>
+                                    <strong>묵은해 보내올 제 새해 소원을 담아</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>현상진맥</span><br>
+                                    <strong>전통 공연·음반 트렌드 2022년 회고 vs 2023년 전망</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>그들의 이력서</span><br>
+                                    <strong>점 긋고, 점 잇다 달음(Dal:um)</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>풍류재담</span><br>
+                                    <strong>다시, 심청가 ② 젖동냥하는 대목 "죄송한데, 저 좀 도와주세요"</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>연희살롱</span><br>
+                                    <strong>눈 내리는 날 듣는 노래 정가 보컬리스트 최여완 편</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_bg_bottom">
+                    <div class="menu_news">
+                        <ul>
+                            <li><a href="#"><img src="img/icon/ico_nav1.png" alt="">문화계 소식</a></li>
+                            <li><a href="#"><img src="img/icon/ico_nav2.png" alt="">추천 영상</a></li>
+                            <li><a href="#"><img src="img/icon/ico_nav3.png" alt="">공연 소식</a></li>
+                            <li><a href="#"><img src="img/icon/ico_nav4.png" alt="">새 음반</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_bottom_area">
+                        <ul>
+                            <li><a href="#">웹진 소개</a></li>
+                            <li><a href="#">과월호</a></li>
+                            <li><a href="#">공연 등록</a></li>
+                            <li><a href="#">음반 등록</a></li><br>
+                            <li><a href="#">정기구독</a></li>
+                            <li><a href="#">건의·문의</a></li>
+                            <li><a href="#">독자감상실록</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_sns">
+                        <a href="#" class="facebook"><img src="img/icon/ico_nav_sns1.png" alt=""></a>
+                        <a href="#" class="instagram"><img src="img/icon/ico_nav_sns2.png" alt=""></a>
+                        <a href="#" class="blog"><img src="img/icon/ico_nav_sns3.png" alt=""></a>
+                        <a href="#" class="youtube"><img src="img/icon/ico_nav_sns4.png" alt=""></a>
+                        <a href="#" class="naver_tv"><img src="img/icon/ico_nav_sns5.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="img_area">
+            <div class="tit_text">PLAYLIST
+            </div>
+            <div class="recommend">
+                <img src="sub6_img/sub_tit.png" alt="">
+            </div>
+            <p>기분 따라 듣는 음악부터 아티스트의 플레이리스트까지<br>
+                취향에 딱 맞는 띵곡을 연희살롱에서 찾아보세요.</p>
+                <div class="a_area">
+                    <a href="#">
+                        <p class="day">2023.08</p>
+                        <div class="a_area_img"><img src="sub6_img/61_salon.jpg" alt=""></div>
+                        <div class="text_box">
+                            <strong>금주의 썰풀레이리스트당신의<br> 썰풀이 연희의 살풀이</strong>
+
+                            <p>다양한 사연에 딱 맞는 전통음악! 매주 목요일 어떤 한 맺힌 SSUL을 연희의 살풀이로 달래줄지 궁금하다면 지금 ‘썰풀레이리스트’를 만나보세요.</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        </div>
+        <div class="inner_contents">
+            <ul>
+                <li>
+                    <a href="#">
+                        <p class="day">2023.07</p>
+                        <p class="vol">vol.60</p>
+                        <figure>
+                            <img src="sub6_img/60_salon.jpg" alt="">
+                        </figure>
+                        <p class="main_txt">금주의 썰풀레이리스트당신의 썰풀이 연희의 살풀이</p>
+                        <p class="sub_txt">다양한 사연에 딱 맞는 전통음악! 매주 목요일 어떤 한 맺힌 SSUL을 연희의 살풀이로 달래줄지 궁금하다면 지금 ‘썰풀레이리...</p>
+                        <div class="view">
+                            <a href="#">
+                            자세히보기 <span class="material-symbols-outlined">
+                                add
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="day">2023.06</p>
+                        <p class="vol">vol.59</p>
+                        <figure>
+                            <img src="sub6_img/59_salon.jpg" alt="">
+                        </figure>
+                        <p class="main_txt">금주의 썰풀레이리스트당신의 썰풀이 연희의 살풀이</p>
+                        <p class="sub_txt">다양한 사연에 딱 맞는 전통음악! 매주 목요일 어떤 한 맺힌 SSUL을 연희의 살풀이로 달래줄지 궁금하다면 지금 ‘썰풀레이리...</p>
+                        <div class="view">
+                            <a href="#">
+                            자세히보기 <span class="material-symbols-outlined">
+                                add
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="day">2023.05</p>
+                        <p class="vol">vol.58</p>
+                        <figure>
+                            <img src="sub6_img/58_salon.jpg" alt="">
+                        </figure>
+                        <p class="main_txt">금주의 썰풀레이리스트당신의 썰풀이 연희의 살풀이</p>
+                        <p class="sub_txt">다양한 사연에 딱 맞는 전통음악! 매주 목요일 어떤 한 맺힌 SSUL을 연희의 살풀이로 달래줄지 궁금하다면 지금 ‘썰풀레이리...</p>
+                        <div class="view">
+                            <a href="#">
+                            자세히보기 <span class="material-symbols-outlined">
+                                add
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="day">2023.04</p>
+                        <p class="vol">vol.57</p>
+                        <figure>
+                            <img src="sub6_img/57_salon.jpg" alt="">
+                        </figure>
+                        <p class="main_txt">새로운 도약을 위한 노래거문고 연주가 김민영 편</p>
+                        <p class="sub_txt">한 걸음 더 나아가고 싶을 때,열정을 일깨워줄 플레이리스트!</p>
+                        <div class="view">
+                            <a href="#">
+                            자세히보기 <span class="material-symbols-outlined">
+                                add
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="day">2023.03</p>
+                        <p class="vol">vol.56</p>
+                        <figure>
+                            <img src="sub6_img/56_salon.jpg" alt="">
+                        </figure>
+                        <p class="main_txt">봄날의 햇살 같은 노래 정가 보컬리스트 구민지 편</p>
+                        <p class="sub_txt">봄 사랑 벚꽃 말고~ 덧없이 짧은 계절, 아정한 목소리를 들려줄 플레이리스트!</p>
+                        <div class="view">
+                            <a href="#">
+                            자세히보기 <span class="material-symbols-outlined">
+                                add
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="day">2023.02</p>
+                        <p class="vol">vol.55</p>
+                        <figure>
+                            <img src="sub6_img/55_salon.jpg" alt="">
+                        </figure>
+                        <p class="main_txt">월요병을 낫게 해줄 노래가야금 퍼포머 박선주 편</p>
+                        <p class="sub_txt">반복되는 일상을 벗어나고 싶을 때, 월요일을 산뜻하게 바꿔줄 플레이리스트!</p>
+                        <div class="view">
+                            <a href="#">
+                            자세히보기 <span class="material-symbols-outlined">
+                                add
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="day">2023.01</p>
+                        <p class="vol">vol.54</p>
+                        <figure>
+                            <img src="sub6_img/54_salon.jpg" alt="">
+                        </figure>
+                        <p class="main_txt">눈 내리는 날 듣는 노래 - 정가 보컬리스트 최여완 편</p>
+                        <p class="sub_txt">온통 하얀 세상에 첫 발자국을 남기듯, 눈 내리는 날 같이 듣고 싶은 플레이리스트!</p>
+                        <div class="view">
+                            <a href="#">
+                            자세히보기 <span class="material-symbols-outlined">
+                                add
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="day">2022.12</p>
+                        <p class="vol">vol.53</p>
+                        <figure>
+                            <img src="sub6_img/53_salon.jpg" alt="">
+                        </figure>
+                        <p class="main_txt">가슴을 뛰게 하는 노래 - '이날치' 신유진 편</p>
+                        <p class="sub_txt">수고했어 올해도! 한 해의 마지막 달, 가슴 뛰는 선물을 안겨줄 플레이리스트!</p>
+                        <div class="view">
+                            <a href="#">
+                            자세히보기 <span class="material-symbols-outlined">
+                                add
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="day">2022.11</p>
+                        <p class="vol">vol.52</p>
+                        <figure>
+                            <img src="sub6_img/52_salon.jpg" alt="">
+                        </figure>
+                        <p class="main_txt">가을 향기를 머금은 노래 - 소리꾼 이윤아 편</p>
+                        <p class="sub_txt">가을 타나 봐~ 따스한 것들이 그리울 때 허전한 기분을 달래줄 플레이리스트!</p>
+                        <div class="view">
+                            <a href="#">
+                            자세히보기 <span class="material-symbols-outlined">
+                                add
+                                </span>
+                            </a>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button class="more_view">더 보기 <span class="material-symbols-outlined">
+            expand_more
+            </span>
+        </button>
+        <div class="more_contents">
+            <div class="inner_contents">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <p class="day">2022.10</p>
+                            <p class="vol">vol.51</p>
+                            <figure>
+                                <img src="sub6_img/51_salon.jpg" alt="">
+                            </figure>
+                            <p class="main_txt">깊은 잠을 부르는 노래, 소리꾼 이봉근 편</p>
+                            <p class="sub_txt">눈을 감아도 잠이 오지 않는 날, 밤의 운치를 담은 꿀잠 플레이리스트!</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="day">2022.09</p>
+                            <p class="vol">vol.50</p>
+                            <figure>
+                                <img src="sub6_img/50_salon.jpg" alt="">
+                            </figure>
+                            <p class="main_txt">고민을 잊게 만드는 노래 '뮤르' 허새롬 편</p>
+                            <p class="sub_txt">삶에서 다양한 고민을 마주할 때 깊은 위안과 영감을 받을 수 있는 플레이리스트!</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="day">2022.08</p>
+                            <p class="vol">vol.49</p>
+                            <figure>
+                                <img src="sub6_img/49_salon.jpg" alt="">
+                            </figure>
+                            <p class="main_txt">떠나고 싶을 때 듣는 노래 소리꾼 오단해 편</p>
+                            <p class="sub_txt">당장 떠날 수 없어도 마음만큼은 여행지로 순간 이동하게 만들 플레이리스트!</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="day">2022.07</p>
+                            <p class="vol">vol.48</p>
+                            <figure>
+                                <img src="sub6_img/48_salon.jpg" alt="">
+                            </figure>
+                            <p class="main_txt">사소한 일상을 돌아보는 노래, 소리꾼 김나니 편</p>
+                            <p class="sub_txt">자연과 일상이 가까워지는 시간, 주변의 반짝임을 돌아보게 할 플레이리스트!</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="day">2022.06</p>
+                            <p class="vol">vol.47</p>
+                            <figure>
+                                <img src="sub6_img/47_salon.jpg" alt="">
+                            </figure>
+                            <p class="main_txt">나만의 힐링을 위한 노래, 소리꾼 양진수 편
+                            </p>
+                            <p class="sub_txt">바쁜 삶에 치여 잠시 쉬어가고 싶을 때 소중한 것을 떠올리게 할 플레이리스트!</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="day">2022.05</p>
+                            <p class="vol">vol.46</p>
+                            <figure>
+                                <img src="sub6_img/46_salon.jpg" alt="">
+                            </figure>
+                            <p class="main_txt">시작과 끝, 모든 하루의 노래 - 소리꾼 김주리 편</p>
+                            <p class="sub_txt">한 발 한 발 내딛는, 길고 긴 하루의 시작과 끝에서 마음을 보듬어 줄 김주리의 플레이리스트!</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="day">2022.04</p>
+                            <p class="vol">vol.45</p>
+                            <figure>
+                                <img src="sub6_img/45_salon.jpg" alt="">
+                            </figure>
+                            <p class="main_txt">단정한 자유를 되찾는 노래 - 해금 연주가 천지윤 편</p>
+                            <p class="sub_txt">잊었던 꿈을 되찾아 줄 해금 연주가 천지윤의 플레이리스트. 에세이와 함께하는 4월의 음악을 만나보세요.</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="day">2022.03</p>
+                            <p class="vol">vol.44</p>
+                            <figure>
+                                <img src="sub6_img/44_salon.jpg" alt="">
+                            </figure>
+                            <p class="main_txt">겨울잠을 깨워줄 노래, 가야금병창 최예림 편</p>
+                            <p class="sub_txt">꽃봉오리가 열리고 바쁜 일상이 시작되는 새봄, '예미넴' 가야금병창 최예림의 플레이리스트로 활기차게 시작해보세요.</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="day">2022.02</p>
+                            <p class="vol">vol.43</p>
+                            <figure>
+                                <img src="sub6_img/43_salon.jpg" alt="">
+                            </figure>
+                            <p class="main_txt">마음에 봄을 불러오는 노래, 가야금병창 임재현 편</p>
+                            <p class="sub_txt">초목이 싹 틔우고 만물이 소생하는 2월, 가야금병창 임재현의 플레이리스트로 움츠린 마음에 포근한 봄을 불러와 볼까요?</p>
+                            <div class="view">
+                                <a href="#">
+                                자세히보기 <span class="material-symbols-outlined">
+                                    add
+                                    </span>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer clear">
+        <div class="footer_area">
+            <h2><span></span></h2>
+            <div class="footer_logo">
+                <a href="#">
+                    <img src="img/gzd_logo.png" alt="">
+                </a>
+            </div>
+            <div class="footer_sns">
+                <ul>
+                    <li><a href="#"><img src="img/sns1.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/sns2.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/sns3.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/sns4.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="footer_txt">
+                <p>발행인 김삼진 | 편집부장 전국은 | 편집팀장 심재흥 | 기획 박혜주·이정하 | 아트디렉터 이슬 | 사진 김태화 | 편집실 대외협력팀 02-580-3282 | webzine@kotpa.org | 06757 서울특별시 서초구 서초동 남부순환로 2364 국악연수관 1층</p>
+                <p>Copyright 2023 Korean Traditional Performing Arts Foundation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹진 소개 - 월간 공진단</title>
+    <link rel="icon" href="img/icon/logo.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/sub_page1.css">
+    <link rel="stylesheet" href="css/mobile_sub1.css" media="all and (max-width: 800px)">
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/Gongjindan.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <h1><a href="index.html"><img src="sub1_img/sub_list_logo_black.png" alt="logo"></a></h1>
+            <nav class="gnb">
+                <ul class="gnb_area">
+                    <li>
+                        <a href="sub_page1.html">웹진 소개</a>
+                        <ul class="gnb_before">
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub_page2.html">추천명약</a>
+                        <ul class="gnb_before">
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub_page3.html">예인터뷰</a>
+                        <ul class="gnb_before">
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub_page6.html">연희살롱</a>
+                        <ul class="gnb_before">
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="sub_page7.html">소리탐독</a>
+                        <ul class="gnb_before">
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu_bar">
+                <a href="#">
+                    <img src="sub1_img/link.png" alt="">
+                    <img src="sub1_img/share.png" alt="">
+                </a>
+                <button id="m_btn"><img src="sub1_img/ico_mobile_menu.png" alt=""></button>
+            </div>
+            <button id="btn"><img src="sub1_img/ico_mobile_menu.png" alt=""></button>
+        </div>
+    </header>
+    <nav class="menu clear">
+        <div class="menu_area">
+            <div class="black_bg"></div>
+            <div class="main_bg">
+                <div class="main_bg_top">
+                    <div class="close_btn">
+                        <a href="#"><img src="img/icon/btn_closed_nav.png" alt=""></a>
+                    </div>
+                    <div class="search">
+                        <fieldset>
+                            <a href="#" class="search_img"><img src="img/icon/ico_nav_srch.png" alt=""></a>
+                            <input type="text" id="search_area"    placeholder="검색할 단어를 입력해주세요." >
+                        </fieldset>
+                    </div>
+                    <div class="menu_box">
+                        <span>코너별 목록 바로가기</span>
+                    </div>
+                    <div class="menu_list">
+                        <ul>
+                            <li><a href="sub_page2.html">PREVIEW 추천명약</a></li>
+                            <li><a href="sub_page4.html">TREND 현상진맥</a></li>
+                            <li><a href="sub_page3.html">PEOPLE 그들의 이력서</a></li>
+                            <li><a href="sub_page5.html">STORY 풍류재담</a></li>
+                            <li><a href="sub_page6.html">PLAYLIST 연희살롱</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_box">
+                        <span>이달의 콘텐츠 바로가기</span>
+                    </div>
+                    <div class="menu_list2">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>추천명약</span><br>
+                                    <strong>묵은해 보내올 제 새해 소원을 담아</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>현상진맥</span><br>
+                                    <strong>전통 공연·음반 트렌드 2022년 회고 vs 2023년 전망</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>그들의 이력서</span><br>
+                                    <strong>점 긋고, 점 잇다 달음(Dal:um)</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>풍류재담</span><br>
+                                    <strong>다시, 심청가 ② 젖동냥하는 대목 "죄송한데, 저 좀 도와주세요"</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>연희살롱</span><br>
+                                    <strong>눈 내리는 날 듣는 노래 정가 보컬리스트 최여완 편</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_bg_bottom">
+                    <div class="menu_news">
+                        <ul>
+                            <li><a href="#"><img src="img/icon/ico_nav1.png" alt="">문화계 소식</a></li>
+                            <li><a href="#"><img src="img/icon/ico_nav2.png" alt="">추천 영상</a></li>
+                            <li><a href="#"><img src="img/icon/ico_nav3.png" alt="">공연 소식</a></li>
+                            <li><a href="#"><img src="img/icon/ico_nav4.png" alt="">새 음반</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_bottom_area">
+                        <ul>
+                            <li><a href="#">웹진 소개</a></li>
+                            <li><a href="#">과월호</a></li>
+                            <li><a href="#">공연 등록</a></li>
+                            <li><a href="#">음반 등록</a></li><br>
+                            <li><a href="#">정기구독</a></li>
+                            <li><a href="#">건의·문의</a></li>
+                            <li><a href="#">독자감상실록</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_sns">
+                        <a href="#" class="facebook"><img src="img/icon/ico_nav_sns1.png" alt=""></a>
+                        <a href="#" class="instagram"><img src="img/icon/ico_nav_sns2.png" alt=""></a>
+                        <a href="#" class="blog"><img src="img/icon/ico_nav_sns3.png" alt=""></a>
+                        <a href="#" class="youtube"><img src="img/icon/ico_nav_sns4.png" alt=""></a>
+                        <a href="#" class="naver_tv"><img src="img/icon/ico_nav_sns5.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="contents">
+        <div class="img_area">
+            <div class="tit_text">INTRODUCTION</div>
+            <div class="webjin_tit">
+                <img src="sub1_img/sub_tit_overview.png" alt="">
+            </div>
+        </div>
+        <div class="inner_area">
+            <div class="txt1">
+                <p>월간 공진단</p>
+                <p>전통공연예술진흥재단이 매월 발행하는 웹진으로, 재단의 이름을 줄여 ‘공진단’이라 이름을<br>
+                    붙였습니다. ‘전통 문화 묘약’이라는 월간 공진단의 슬로건처럼 건강한 담론을 통해 전통예술<br>
+                    생태계를 성장시키고, 나아가 많은 이에게 전통의 멋과 즐거움을 선사하고자 합니다.
+                </p>
+                <p>2018년 7월 첫 호를 시작으로 고전부터 컨템퍼러리에 이르기까지 전통공연예술의 현상을 다양한<br>
+                    시선으로 살피고, 나아가 전통문화에 관한 담론을 펼쳐나가고 있습니다. 현재 써내려가는 우리의<br>
+                    이야기가 훗날 이 시대의 전통으로 기록될 수 있기를 바랍니다.</p>
+            </div>
+            <div class="txt2">
+                <img src="sub1_img/tit1.png" alt="">
+                <p>판소리의 한 장면으로 심리 상태를 진단하고 세 명의 필진으로 구성된 ‘명약단’이<br>
+                    우리 삶에 약이 될 만한 전통문화예술 콘텐츠를 큐레이션해 처방해드립니다.</p>
+            </div>
+            <div class="txt3">
+                <img src="sub1_img/tit2.png" alt="">
+                <p>전통문화를 기반으로 다양한 작업을 선보이는 사람들을 소개합니다.<br>
+                    예술인이 직접 쓴 인생 이야기와 비하인드 컷으로 새로운 예술 세계를 느껴보세요.</p>
+            </div>
+            <div class="txt4">
+                <img src="sub1_img/tit3.png" alt="">
+                <p>월간 공진단의 마스코트 ‘연희’가 독자의 사연을 듣고 상황에 딱 맞는<br>
+                    전통음악 플레이리스트를 추천해드립니다. 취향에 맞는 띵곡을 발견해보세요.</p>
+            </div>
+            <div class="txt5">
+                <img src="sub1_img/tit4.png" alt="">
+                <p>예술인이 책을 선정해 우리 소리의 멋과 개성이 담긴 목소리로 들려줍니다.<br>
+                    판소리, 민요, 정가로 색다른 매력을 전하는 낭독을 즐겨보세요.</p>
+            </div>
+            <div class="btn">
+                <button>과월호 보기</button>
+            </div>
+            <div class="txt6">
+                <p>공진단 블랙</p>
+                <p>공진단 블랙은 전통예술계 정보와 동향을 담는 전문 매거진으로<br>
+                    새로운 시각, 낯선 해석을 지닌 사람들과 전통예술의 오늘을 기록합니다.
+                </p>
+            </div>
+            <div class="txt7">
+                <img src="sub1_img/tit_b1.png" alt="">
+                <p>예술계 이슈를 다양한 관점으로 짚어보는 전문가 칼럼으로<br>
+                    함께 생각해봐야 할 주제 의식을 통해 방향을 짚어봅니다.</p>
+            </div>
+            <div class="txt8">
+                <img src="sub1_img/tit_b2.png" alt="">
+                <p>동시대 공연예술계 동향을 살펴보고<br>
+                    시대·문화적 가치와 의미에 관해 다각도로 통찰해봅니다.</p>
+            </div>
+            <div class="txt9">
+                <img src="sub1_img/tit_b3.png" alt="">
+                <p>예술인들과 솔직한 경험담과 생각을 나누며<br>
+                    예술 현장의 목소리를 통해 미래를 탐색해봅니다.</p>
+            </div>
+            <div class="txt10">
+                <img src="sub1_img/tit_b4.png" alt="">
+                <p>공진단 블랙은 예술 현장의 생생한 목소리를 담고자 여러분의 기고를 받고 있습니다.<br>
+                    자격 조건이나 주제의 제한 없이 누구나 칼럼니스트가 될 수 있습니다.<br>
+                    개인의 생각이 담론이 될 수 있도록,더 나아가 건강한 비평 문화가 구축되어<br>
+                    전통예술문화의 성장 발판이 될 수 있도록 여러분의 목소리를 들려주세요.<br>
+                    공진단의 문을 활짝 열어두겠습니다.</p>
+            </div>
+            <div class="black_box clear">
+                <dl>
+                    <dt>
+                        <strong>모집기간</strong>
+                    </dt>
+                    <dd>연중 상시</dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <strong>자유 주제</strong>
+                    </dt>
+                    <dd> 자유(전통공연예술 관련 다양한 논평, 비평, 칼럼 등)</dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <strong>분량</strong>
+                    </dt>
+                    <dd>
+                        200자 원고지 기준 17매 이내</dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <strong>접수 방법</strong>
+                    </dt>
+                    <dd>
+                        이메일 접수(webzine@kotpa.org)
+                        <p>*메일 제목 : [공진단 블랙 기고]</p>
+                        <p>*메일 내용 : 이름, 연락처, 소개글 필수 기재</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <strong>선정&middot;발표</strong>
+                    </dt>
+                    <dd>
+                        상시 선정 후 개별 연락
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <strong>원고료</strong>
+                    </dt>
+                    <dd>
+                        200자 원고지 1매 당 15,000원
+                        <p>*선정작에 한해 지급</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <strong>문의</strong>
+                    </dt>
+                    <dd>
+                        기반조성팀 02-580-3276</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="request">
+            <div class="txt_re">
+                정기구독을 신청하시면 매달 이메일로 뉴스레터가 발송됩니다
+                <div class="a_re">
+                    <a href="#">정기구독 신청하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wrap">
+        <div class="footer clear">
+            <div class="footer_area">
+                <h2><span></span></h2>
+                <div class="footer_logo">
+                    <a href="#">
+                        <img src="img/gzd_logo.png" alt="">
+                    </a>
+                </div>
+                <div class="footer_sns">
+                    <ul>
+                        <li><a href="#"><img src="img/sns1.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/sns2.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/sns3.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/sns4.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="footer_txt">
+                    <p>발행인 김삼진 | 편집부장 전국은 | 편집팀장 심재흥 | 기획 박혜주·이정하 | 아트디렉터 이슬 | 사진 김태화 | 편집실 대외협력팀 02-580-3282 | webzine@kotpa.org | 06757 서울특별시 서초구 서초동 남부순환로 2364 국악연수관 1층</p>
+                    <p>Copyright 2023 Korean Traditional Performing Arts Foundation. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
